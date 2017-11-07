@@ -1,0 +1,26 @@
++ create cardstack
++ create players
++ create board
+
+Board:
+    + players
+    + Card
+    - Pile
+
+Player:
+    + Hand
+    + Id
+
+Card:
+    + Type
+    + Rank
+    + Value
+
+
+x - deal the cards
+ - 1.player start with the lowest card that isn't 2
+ - The rest follows, as long as they have a card that has a higher value.
+ - Once a player who does not have a card with equal or higher value, passes,
+ the that player is out until next round.
+ - Once only one player is left, the winner is announced and new round
+ -
